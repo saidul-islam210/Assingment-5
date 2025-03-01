@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete z2</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="navbar bg-base-100 flex justify-between items-center px-4 py-2 shadow-md rounded-lg">
+                <div class="flex items-center space-x-2">
+                    <img class="size-8" src="./assets/logo.png" alt="">
+                    <h1 class="text-2xl font-bold">DevBoard</h1>
+                </div>
+                <button id="back-btn" class="bg-indigo-500 font-bold text-xl shadow-md text-white px-3 py-1 rounded-md mt-2 complete-btn">Back to Desk</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- section  -->
+     <div class="text-2xl font-bold text-center mt-4 py-4"><h1>Blogs</h1></div>
+     <section>
+        <div tabindex="0" class="collapse collapse-open bg-base-100 border-base-300 border">
+            <div class="collapse-title font-semibold">Question-1: What are the different ways to select an element in the DOM?</div>
+            <div class="collapse-content text-sm">
+              DOM full meanign is Document Object Modle. We can select a single element by "getElementById" and also have 5 element.
+            </div>
+        </div>
+        <div tabindex="0" class="collapse collapse-open bg-base-100 border-base-300 border">
+            <div class="collapse-title font-semibold">Question-2: What is the difference between innerHTML, innerText, and textContent ?</div>
+            <div class="collapse-content text-sm">
+            innerHTML give us a HTML stracture in javaScript that we can customized our code. We can any tag Example : h1,p , div, span, button etc. <br>
+            And innerText We can use only text. <br>
+            textContent : It used to get or set text inside an HTML,excluding any HTML tag.
+            </div>
+        </div>
+        <div tabindex="0" class="collapse collapse-open bg-base-100 border-base-300 border">
+            <div class="collapse-title font-semibold">Question-3: What is event delegation in the DOM?</div>
+            <div class="collapse-content text-sm">
+                Event delegation is a very interesting mehod in JavaScript where instead of adding event listeners to multiple child elements,we add a single event listener to a parent element.
+            </div>
+        </div>
+        <div tabindex="0" class="collapse collapse-open bg-base-100 border-base-300 border">
+            <div class="collapse-title font-semibold">Question-4: What is event bubbling in the DOM?</div>
+            <div class="collapse-content text-sm">
+                Event bubbling in JavaScript is a mechanism where an event triggered on a child element propagates upward through its ancestors in the DOM. It allows parent elements to respond to events triggered by their child elements.
+            </div>
+        </div>
+        <div tabindex="0" class="collapse collapse-open bg-base-100 border-base-300 border">
+            <div class="collapse-title font-semibold">Question-5: How do you create, add, and remove elements using JavaScript?</div>
+            <div class="collapse-content text-sm">
+            JavaScript give as a powerfull feater in computer science. <br> In javaScript we can create element by useing "document.createElement()". <br>
+            
+            </div>
+        </div>
+     </section>
+    <script>
+        document.getElementById('back-btn').addEventListener('click',function(){
+            window.history.back()
+        })
+    </script>
+</body>
+</html>
